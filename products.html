@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The People's Market | Models</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black text-white">
+    <nav class="navbar">
+      <div class="logo">V<span>W</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Models</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="register.html" class="btn-login">Join Now</a>
+      </div>
+    </nav>
+
+    <main class="products-container">
+      <header class="products-header">
+        <span class="badge">VW EXCELLENCE CENTER</span>
+        <h1>German <span>Precision</span></h1>
+        <p>
+          Explore our curated collection of iconic Volkswagen models. From
+          heritage classics to electric innovation.
+        </p>
+
+        <div class="search-wrapper">
+          <input
+            type="text"
+            id="carSearch"
+            placeholder="Search models (e.g. Golf, ID.4)..."
+          />
+          <span class="search-icon">🔍</span>
+        </div>
+      </header>
+
+      <div class="product-grid" id="carGrid"></div>
+
+      <div class="pagination" id="pagination"></div>
+    </main>
+
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-content">
+        <button class="close-modal" id="closeModal">✕</button>
+        <div class="modal-body">
+          <div class="modal-image">
+            <img id="modalImg" src="" alt="" />
+          </div>
+          <div class="modal-info">
+            <span class="tag">Engineering & Design</span>
+            <h2 id="modalTitle"></h2>
+            <div class="stars">★★★★★</div>
+            <p id="modalDesc"></p>
+            <div class="modal-footer">
+              <h3 id="modalPrice"></h3>
+              <button class="whatsapp-btn" id="waBtn">Buy via WhatsApp</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">V<span>W</span></div>
+                <p>The People's Market: Delivering German precision and reliability to Kenyan roads.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">All Models</a></li>
+                    <li><a href="register.html">Join the Family</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-legal">
+                <h4>Legal & Privacy</h4>
+                <p class="privacy-notice">
+                    <strong>Privacy Notice:</strong> We value your data. In compliance with 
+                    <strong>Kenya’s Data Protection Act (2019)</strong>, we ensure that your 
+                    personal information is collected and processed transparently, securely, 
+                    and only for the purpose of enhancing your experience with the VW brand.
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 The People's Market. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="productData.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
