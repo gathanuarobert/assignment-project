@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VW | Join the Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">V<span>W</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Models</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="register.html" class="btn-login">Join Now</a>
+        </div>
+    </nav>
+
+    <div class="registration-wrapper">
+        <div class="registration-card">
+            <div class="form-header">
+                <h2>Registration Form</h2>
+            </div>
+            
+            <form id="regForm" onsubmit="return validateForm()">
+                <div class="input-group">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="email@example.com" required>
+                </div>
+
+                <div class="password-row">
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter Password" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" placeholder="Re-enter Password" required>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="reset" class="btn-reset">Reset</button>
+                    <button type="submit" class="btn-submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">V<span>W</span></div>
+                <p>The People's Market: Delivering German precision and reliability to Kenyan roads.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">All Models</a></li>
+                    <li><a href="register.html">Join the Family</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-legal">
+                <h4>Legal & Privacy</h4>
+                <p class="privacy-notice">
+                    <strong>Privacy Notice:</strong> We value your data. In compliance with 
+                    <strong>Kenya’s Data Protection Act (2019)</strong>, we ensure that your 
+                    personal information is collected and processed transparently, securely, 
+                    and only for the purpose of enhancing your experience with the VW brand.
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 The People's Market. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
