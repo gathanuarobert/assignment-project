@@ -115,7 +115,7 @@ function openModal(car) {
     
     document.getElementById('waBtn').onclick = () => {
         const msg = encodeURIComponent(`Hello People's Market, I am interested in the ${car.name}.`);
-        window.open(`https://wa.me/254792735124?text=${msg}`);
+        window.open(`https://wa.me/254794721461?text=${msg}`);
     };
 
     modal.style.display = 'flex';
